@@ -1,0 +1,38 @@
+package a;
+
+//-----------class-----: encapsulation , abstarction ? read about
+// head first core java,thiking in java burce, notes : yet anothor prog ins notes
+//https://www3.ntu.edu.sg/home/ehchua/programming/index.html
+
+class Employee{
+	private  int id;
+	private String name;
+	private double salary;
+	
+	//ctr
+	public Employee() {
+		id=121;
+		name="raj";
+		salary=56000;
+	}
+							//local variable
+	public Employee(int id, String name, double salary) {
+		id=id;
+		name=name;
+		salary=salary;
+	}
+	
+	 public void print() {
+		 System.out.println("id : "+ id+ " name : "+ name+" salary: "+ salary);
+	 }
+	
+}
+public class E_EmployeeDemo {
+
+	public static void main(String[] args) {
+		Employee e=new Employee(1,"anil",56000.00);// default ctr
+		
+		e.print();
+		
+	}
+}

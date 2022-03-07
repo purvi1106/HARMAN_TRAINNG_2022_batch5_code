@@ -1,0 +1,15 @@
+package a;
+
+public class I_DemoArray2DIdentityMatrix {
+
+	public static void main(String[] args) {
+
+
+		int a[][] = { { 1,0, 0 }, { 0,1,0}, { 0,0,1} };
+		
+
+	}
+
+	
+
+}

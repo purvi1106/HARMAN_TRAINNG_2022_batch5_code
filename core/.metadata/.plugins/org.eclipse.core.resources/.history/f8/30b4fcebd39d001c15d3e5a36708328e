@@ -1,0 +1,15 @@
+package a;
+
+import java.util.Scanner;
+
+public class C_PrimeNo {
+
+	public static void main(String[] args) {
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("PE a no to check for prime no...");
+		int n=scanner.nextInt();
+		
+		boolean isPrime= true;
+		
+	}
+}

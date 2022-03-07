@@ -1,0 +1,8 @@
+package a;
+
+public class Hello {
+	//play with code: 
+	public static void main2(String[] args) {
+	System.out.println("hello");
+	}
+}

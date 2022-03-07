@@ -1,0 +1,16 @@
+package a;
+
+//-----------class-----?
+class Employee{
+	private int id;
+	private String name;
+	private double salary;
+	
+	
+}
+public class E_EmployeeDemo {
+
+	public static void main(String[] args) {
+		
+	}
+}

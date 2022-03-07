@@ -1,0 +1,13 @@
+1646626372466	Delete element
+1646626376131	Delete element
+1646627697314	Extract method 'getNumberFromTheUser'
+1646627735692	Extract method 'printStarTriangle'
+1646629013485	Rename type 'Hello'
+1646629036464	Rename type 'A_Hello'
+1646629044274	Rename type 'Hello'
+1646629517907	Copy compilation unit
+1646629578171	Extract method 'checkForPrimeNumber'
+1646636324404	Copy compilation unit
+1646636922520	Extract method 'print2Darray'
+1646636987719	Extract method 'printSum'
+1646637022271	Copy compilation unit

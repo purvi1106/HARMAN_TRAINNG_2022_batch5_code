@@ -1,0 +1,25 @@
+package a;
+
+//-----------class-----?
+class Employee{
+	 int id;
+	 String name;
+	 double salary;
+	
+	 public void print() {
+		 System.out.println("id : "+ id+ " name : "+ name+" salary: "+ salary);
+	 }
+	
+}
+public class E_EmployeeDemo {
+
+	public static void main(String[] args) {
+		Employee e=new Employee();// default ctr
+		
+		e.id=122;
+		e.name="rajiv";
+		e.salary=45000;
+		e.print();
+		
+	}
+}

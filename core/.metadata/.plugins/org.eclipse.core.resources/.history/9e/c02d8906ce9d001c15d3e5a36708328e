@@ -1,0 +1,14 @@
+package a;
+
+public class Hello {
+	//play with code: 
+	public static void main(String[] args) {
+	
+		//how to print a star
+		System.out.println("*");
+		
+		
+		
+		
+	}
+}

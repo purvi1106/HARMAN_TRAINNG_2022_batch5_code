@@ -1,0 +1,13 @@
+package a;
+
+class MySingleton{
+	private MySingleton() {
+		System.out.println("dare to call..");
+	}
+}
+public class F_BasicSingleton {
+
+	public static void main(String[] args) {
+		
+	}
+}

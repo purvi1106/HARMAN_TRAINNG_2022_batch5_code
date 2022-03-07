@@ -1,0 +1,17 @@
+package a;
+
+public class G_DemoArray {
+	
+	public static void main(String[] args) {
+		int a[]=new int[5];
+		
+		//-----traditioanl loop------------
+		for(int i=0;i<=5; i++) {
+			System.out.println(a[i]);
+		}
+		
+		//-----------modern loop----------
+		
+	}
+
+}
