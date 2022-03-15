@@ -10,7 +10,8 @@ import com.jdbc.crud.ConnectionFactory;
 
 public class DemoAutoGenKey {
 	
-	private static final String INSERT_INTO_EMP1 = "insert into emp1(name, salary, dept) values(?,?,?)";
+	private static final String INSERT_INTO_EMP1 = 
+			"insert into emp1(name, salary, dept) values(?,?,?)";
 
 	public static void main(String[] args) {
 		
