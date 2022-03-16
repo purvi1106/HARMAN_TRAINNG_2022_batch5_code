@@ -4,23 +4,37 @@
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
   </welcome-file-list>
-  
-  <!-- mapping of the servlet -->
   <servlet>
     <servlet-name>HelloController</servlet-name>
     <servlet-class>com.demo.HelloController</servlet-class>
-   
     <init-param>
-    	<param-name>name</param-name>
-    	<param-value>rajeev gupta</param-value>
+      <param-name>name</param-name>
+      <param-value>rajeev gupta</param-value>
     </init-param>
-    
     <load-on-startup>1</load-on-startup>
   </servlet>
-  
   <servlet-mapping>
     <servlet-name>HelloController</servlet-name>
     <url-pattern>/hello</url-pattern>
   </servlet-mapping>
-  
+  <servlet>
+    <description></description>
+    <display-name>SessionController</display-name>
+    <servlet-name>SessionController</servlet-name>
+    <servlet-class>com.demo.SessionController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SessionController</servlet-name>
+    <url-pattern>/SessionController</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SessionCotroller2</display-name>
+    <servlet-name>SessionCotroller2</servlet-name>
+    <servlet-class>com.demo.SessionCotroller2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SessionCotroller2</servlet-name>
+    <url-pattern>/SessionCotroller2</url-pattern>
+  </servlet-mapping>
 </web-app>

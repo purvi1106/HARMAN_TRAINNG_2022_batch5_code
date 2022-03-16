@@ -3,6 +3,7 @@ import java.util.*;
 public class BookCollection {
 	private String ownerName;
 	private List<Book> books;
+	
 	public BookCollection(String ownerName) {
 		this.ownerName = ownerName;
 		this.books=new ArrayList<Book>();
@@ -15,6 +16,12 @@ public class BookCollection {
 	}
 	
 	public boolean hasBook(Book b) {
+		//search opeation
 		return true;
 	}
+	
+	public void sort() {
+		//sort it
+	}
+	
 }
