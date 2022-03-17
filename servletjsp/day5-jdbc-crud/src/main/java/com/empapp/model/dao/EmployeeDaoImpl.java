@@ -23,7 +23,8 @@ public class EmployeeDaoImpl implements EmployeeDao {
 			ResultSet rs = stmt.executeQuery("select * from emp3");
 
 			while (rs.next()) {
-				tempEmp = new Employee(rs.getInt("id"), rs.getString("name"), rs.getDouble("salary"), rs.getInt("age"));
+				tempEmp = new Employee(rs.getInt("id"), 
+						rs.getString("name"), rs.getDouble("salary"), rs.getInt("age"));
 				employees.add(tempEmp);
 			}
 		} catch (SQLException e) {

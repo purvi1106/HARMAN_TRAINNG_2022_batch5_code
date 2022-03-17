@@ -1,4 +1,4 @@
-<%@page import="com.demo.Employee"%>
+<%@page import="com.session1.basic_revision.Employee"%>
 
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
