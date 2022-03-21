@@ -1,5 +1,6 @@
 package com.crud;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -7,14 +8,20 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 //DTO: data transfer object
-@Entity
-@Table(name = "emp_table")
+@Entity //?
+@Table(name = "emp_table_2")
 public class Employee {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "emp_id")
 	private int id;
+	@Column(name = "emp_name", length = 100, nullable = false)
 	private String name;
+	
+	@Column(name = "emp_salary" , nullable = false)
 	private double salary;
+	
+	@Column(name = "emp_age" , nullable = false)
 	private int age;
 
 	public Employee(String name, double salary, int age) {

@@ -1,0 +1,17 @@
+create table accounts(id int not null primary key auto_increment, name varchar(100) not null, balance double not null);
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> insert into accounts(name, balance) values ('rajesh',6000);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into accounts(name, balance) values ('sunita',6000);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select * from accounts;
++----+--------+---------+
+| id | name   | balance |
++----+--------+---------+
+|  1 | rajesh |    6000 |
+|  2 | sunita |    6000 |
++----+--------+---------+
+2 rows in set (0.00 sec)

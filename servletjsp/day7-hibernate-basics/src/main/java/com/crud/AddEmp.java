@@ -18,26 +18,27 @@ public class AddEmp {
 	
 		SessionFactory factory=HibernateConnectionFactory.getSessionFactory();
 	
-		//2. from sessionfactory --> session
 		Session session=factory.openSession();
 		
-		//3. need to start the transaction
+		
 		Transaction tx=session.getTransaction();
-		//create a employee object
-		Employee employee=new Employee("meena", 58000, 23);
+		
+		Employee employee=new Employee("neeta", 38000, 41);	//Transient
+		
+		
 		try {
 			tx.begin();
-			session.save(employee);		//call session.save(emp)
+			session.save(employee);			
+			// persisted: after persist hibernate take care about the changes in the object
 			tx.commit();
 		}catch(HibernateException ex) {
 			ex.printStackTrace();
 			tx.rollback();
 		}
 
-		//close the session
+	
 		session.close();
-		
-		//close the sf
+		//the employee object become detached ...
 		factory.close();
 		
 	}
