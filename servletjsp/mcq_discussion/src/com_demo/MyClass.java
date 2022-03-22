@@ -1,4 +1,4 @@
-package com2;
+package com_demo;
 
 public class MyClass {
 	final int i;

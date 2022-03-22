@@ -1,4 +1,4 @@
-package com2;
+package com_demo;
 
 public class X {
 	public static void main(String[] args) {
