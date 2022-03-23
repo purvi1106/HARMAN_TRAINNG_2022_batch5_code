@@ -23,7 +23,7 @@ public class BookController {
 	public ModelAndView hello(ModelAndView mv) {
 		List<Book>books=bookService.getAll();
 		mv.setViewName("show");
-		mv.addObject("books", books);
+		mv.addObject("books", books);// this data goes to req scope and when i am returing it do request dispacher
 		return mv;
 	}
 }
