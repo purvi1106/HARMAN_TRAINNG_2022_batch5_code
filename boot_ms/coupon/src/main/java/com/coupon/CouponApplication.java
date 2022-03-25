@@ -6,10 +6,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 import com.coupon.entities.Coupon;
 import com.coupon.service.CouponService;
-
+@EnableEurekaClient
 @SpringBootApplication
 public class CouponApplication implements CommandLineRunner{
 

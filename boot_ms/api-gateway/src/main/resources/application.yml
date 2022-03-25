@@ -1,0 +1,32 @@
+server:
+  port: 8100
+spring:
+  application:
+    name: api-gateway
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+zuul:
+  routes:
+    customer-service:
+      path: /customer/**
+      service-id: customer-service
+      strip-prefix: true
+    product-service:
+      path: /product/**
+      service-id: product-service
+      strip-prefix: true
+    coupon-service:
+      path: /coupon/**
+      service-id: coupon-service
+      strip-prefix: true
+    order-service:
+      path: /order/**
+      service-id: order-service
+      strip-prefix: true  
+management: 
+  endpoints: 
+    web: 
+      exposure: 
+        include: '*'
